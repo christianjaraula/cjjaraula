@@ -1102,3 +1102,12 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+#preloader{
+  background: #000 url("../img/catloader.gif") no-repeat center center;
+  background-size: 11%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
