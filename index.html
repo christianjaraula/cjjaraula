@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    const renderTimeStart = new Date();
-    function hidePreloader(){
-        // Do hiding stuff here...
-        const loader = document.getElementById("loader");
-        loader.style.visibility = "hidden";
-    }       
 
-    function scheduleHidePreloader(renderTimeStart){
-        const passedTimeMilliSeconds = new Date() - renderTimeStart;
-        const renderAfterMilliSeconds = 3000 - passedTimeMilliSeconds;
-        setTimeout(hidePreloader, renderAfterMilliSeconds);
-    }
-
-
-    window.addEventListener("load", () => {
-        scheduleHidePreloader(renderTimeStart);
-    }
-</script>
 
 <head>
   <meta charset="utf-8">
@@ -52,6 +34,25 @@
 <body>
   <!-- ======= loader ======= -->
   <div id="preloader"></div>
+  <script>
+    const renderTimeStart = new Date();
+    function hidePreloader(){
+        // Do hiding stuff here...
+        const loader = document.getElementById("loader");
+        loader.style.visibility = "hidden";
+    }       
+
+    function scheduleHidePreloader(renderTimeStart){
+        const passedTimeMilliSeconds = new Date() - renderTimeStart;
+        const renderAfterMilliSeconds = 3000 - passedTimeMilliSeconds;
+        setTimeout(hidePreloader, renderAfterMilliSeconds);
+    }
+
+
+    window.addEventListener("load", () => {
+        scheduleHidePreloader(renderTimeStart);
+    }
+</script>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
