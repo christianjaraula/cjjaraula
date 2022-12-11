@@ -366,8 +366,10 @@
   
   <script>
     var loader = document.getElementById("preloader");
-    window.addEventListener("load", function(){
+    window.addEventListener("DOMContentLoaded", function(){
       loader.style.display = "none";
+      setTimeout(() => loader.style.visibility = "hidden", 3000)
+
 
     })
   </script>
