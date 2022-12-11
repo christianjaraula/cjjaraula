@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    const renderTimeStart = new Date();
+    function hidePreloader(){
+        // Do hiding stuff here...
+        const loader = document.getElementById("loader");
+        loader.style.visibility = "hidden";
+    }       
+
+    function scheduleHidePreloader(renderTimeStart){
+        const passedTimeMilliSeconds = new Date() - renderTimeStart;
+        const renderAfterMilliSeconds = 3000 - passedTimeMilliSeconds;
+        setTimeout(hidePreloader, renderAfterMilliSeconds);
+    }
+
+
+    window.addEventListener("load", () => {
+        scheduleHidePreloader(renderTimeStart);
+    }
+</script>
 
 <head>
   <meta charset="utf-8">
@@ -366,9 +385,9 @@
   
   <script>
     var loader = document.getElementById("preloader");
-    window.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener("load", function(){
       loader.style.display = "none";
-      setTimeout(() => loader.style.visibility = "hidden", 3000)
+      
 
 
     })
