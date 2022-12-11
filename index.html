@@ -388,10 +388,11 @@
     var loader = document.getElementById("preloader");
     window.addEventListener("load", function(){
       loader.style.display = "none";
-      
-
-
     })
+    window.addEventListener('beforeunload', function() {
+      spinnerWrapper.style.display = "";
+    })
+    
   </script>
 
 
