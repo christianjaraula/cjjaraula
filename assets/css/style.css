@@ -1084,7 +1084,7 @@ section {
   }
 }
 
-#preloader .loader{
+#preloader {
   background: #000 url("../img/catloader.gif") no-repeat center center;
   background-size: 12%;
   height: 100vh;
