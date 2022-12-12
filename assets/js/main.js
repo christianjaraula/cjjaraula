@@ -2,6 +2,17 @@
 (function() {
   "use strict";
 
+  const loader = document.querySelector('.loader');
+  function init () {
+    setTimeout(() => {
+      loader.style.opacity = 0;
+      loader.style.disply = 'none';
+
+    }, 4000);
+
+    
+  }
+
   /**
    * Easy selector helper function
    */

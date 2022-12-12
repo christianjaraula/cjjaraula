@@ -1084,7 +1084,7 @@ section {
   }
 }
 
-#preloader{
+#preloader .loader{
   background: #000 url("../img/catloader.gif") no-repeat center center;
   background-size: 12%;
   height: 100vh;
@@ -1093,3 +1093,4 @@ section {
   z-index: 100;
   animation: loading 5s linear infinite;
 }
+

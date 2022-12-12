@@ -385,12 +385,12 @@
 
   function scheduleHidePreloader(renderTimeStart){
       const passedTimeMilliSeconds = new Date() - renderTimeStart;
-      const renderAfterMilliSeconds = 3000 - passedTimeMilliSeconds;
+      const renderAfterMilliSeconds = 5000 - passedTimeMilliSeconds;
       setTimeout(hidePreloader, renderAfterMilliSeconds);
   }
 
 
-  window.addEventListener("load", () => {
+  window.addEventListener("load"), () => {
       scheduleHidePreloader(renderTimeStart);
   }
 </script>
