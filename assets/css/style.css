@@ -1082,7 +1082,6 @@ section {
   width: 100%;
   position: fixed;
   z-index: 100;
-  animation: animate-loading 5s linear infinite;
 }
 
 
