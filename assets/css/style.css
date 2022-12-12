@@ -1084,5 +1084,9 @@ section {
   z-index: 100;
 }
 
+#disappear{
+  animation: vanish 10s forwards;
+}
+
 
 
