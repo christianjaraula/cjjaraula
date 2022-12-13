@@ -1084,6 +1084,20 @@ section {
   z-index: 100;
 }
 
+.github-logo {
+  margin: 0 auto;
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  bottom: 0;
+  top: 170%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
 
 
 
