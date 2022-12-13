@@ -370,15 +370,21 @@
   <script src="assets/js/main.js"></script>
   
   <script>
+    var header = document.getElementById("header");
+    header.style.display = "none";
     var loader = document.getElementById("preloader");
     window.addEventListener("load", function(){
       // Set a timeout to delay the display of the preloader by 3 seconds
       setTimeout(function(){
         loader.style.display = "none";
+        header.style.display = "block";
       }, 3000);
-})
+      
+});
   
   </script>
+
+  
 
   
 
