@@ -830,6 +830,7 @@ section {
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  
 }
 
 .contact .info i {
@@ -1094,6 +1095,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 
 

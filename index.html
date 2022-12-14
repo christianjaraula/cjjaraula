@@ -100,6 +100,9 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>School:</strong> <span>Technological Institute of the Philippines</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Strand:</strong> <span>STEM</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Quezon City, Philippines</span></li>
+                  <br>
+                  <li><strong><h3>Why I choose Technological institute of the Philippines as engineering school</h3></strong></li>
+                  <li> The reasons for choosing a particular engineering school will vary depending on the individual. Some common reasons for choosing the Technological Institute of the Philippines (TIP) as an engineering school might include its reputation for providing a high-quality education, the availability of specific programs or specializations in computer engineering, and the convenience of its location. Additionally, TIP may have a strong support system for students, including academic advisors, career services, and extracurricular activities, which can help students succeed in their studies and prepare for their future careers.</li>
                 </ul>
               </div>
               <div class="col-lg-6">
@@ -108,6 +111,12 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Course:</strong> <span>Computer Engineering</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Jaraulachristian@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Year:</strong> <span>Third-year</span></li>
+                  <br>
+                  <li><strong><h3>Why I choose computer engineering</h3></strong></li>
+                  <br>
+                  <li>There are many reasons why someone might choose to study computer engineering. Some common reasons include a passion for technology, a desire to work in the field of computer technology, and a interest in solving complex problems using technology. Additionally, computer engineering can be a rewarding and lucrative field, with many job opportunities available for those with the necessary skills and knowledge.</li>
+                  
+                  
                 </ul>
               </div>
             </div>
@@ -382,18 +391,24 @@
   <script src="assets/js/main.js"></script>
   
   <script>
+    // Get the header and preloader elements
     var header = document.getElementById("header");
-    header.style.display = "none";
     var loader = document.getElementById("preloader");
-    window.addEventListener("load", function(){
-      // Set a timeout to delay the display of the preloader by 3 seconds
-      setTimeout(function(){
+  
+    // Hide the header element when the page loads
+    header.style.display = "none";
+  
+    // Listen for the "load" event on the window
+    window.addEventListener("load", function() {
+      // Show the preloader
+      loader.style.display = "block";
+  
+      // Set a timeout to delay the display of the header by 3 seconds
+      setTimeout(function() {
         loader.style.display = "none";
         header.style.display = "block";
       }, 3000);
-      
-});
-  
+    });
   </script>
 
   
